@@ -8,16 +8,18 @@ Jeffrey Williams just opened Jurassic Pressure Washing in Denton, TX — veteran
 
 ## 2. Palette concept
 
-Rejected the obvious literal read (dinosaur green, "Jurassic Park" jungle motif) — it would read as a joke/novelty brand, undermining the trust a new company needs most. Instead the palette is built from the actual transformation being sold: a grimy, wet, grey-stone "before" state resolving into a warm cedar-stain "after" state, with a bright water-blue running through it as the literal agent of change (the pressure, the wash).
+Rejected the obvious literal read (dinosaur green, "Jurassic Park" jungle motif) — it would read as a joke/novelty brand, undermining the trust a new company needs most. Original version leaned on cedar-stain (warm amber-brown) as the dominant accent across eyebrows, nav, stats, and the signature rail, with jet-spray blue held back as a "rare" accent used only on primary buttons.
+
+**Revised 2026-07-30, per Owen's direct feedback:** that balance was backwards for a pressure-washing business — "needs to be blue," since water/pressure is what the trade actually signals, and avoiding that association on purpose read as simply wrong rather than clever. Jet Spray is now the dominant accent everywhere (eyebrows, logo, nav hover, stats, process numbers, contact labels, the signature rail itself), and the base dark/light neutrals were cooled toward navy/blue-white to match. Cedar Stain is kept, but demoted to the one place it's actually earned: the literal "after" stain-color swatch in the before/after transformation panel — not threaded through the whole site.
 
 | Name | Hex | Role |
 |---|---|---|
-| **Basalt** | `#1C2226` | Base dark surface — wet stone, not a stand-in for black |
-| **Fossil** | `#EDE7DE` | Base light surface — bone-dry, clean stone |
-| **Ink** | `#17191B` | Body text on light surfaces |
-| **Slate Wash** | `#6C7680` | The "before" state — muted grey-blue, secondary/borders |
-| **Cedar Stain** | `#B9773F` | The "after" state — primary accent, the payoff color |
-| **Jet Spray** | `#2B8CA3` | Rare accent — the water/pressure itself; reserved for primary CTAs |
+| **Basalt** | `#142530` | Base dark surface — deepened toward navy (was `#1C2226`) |
+| **Fossil** | `#E8EEF0` | Base light surface — cooled toward blue-white (was a warmer cream `#EDE7DE`) |
+| **Ink** | `#12222C` | Body text on light surfaces — cooled to match |
+| **Slate Wash** | `#64798A` | The "before" state — muted grey-blue, secondary/borders |
+| **Jet Spray** | `#1C8FBD` | **Primary accent now** — the water/pressure itself, used pervasively (was a "rare" accent at `#2B8CA3`) |
+| **Cedar Stain** | `#B9773F` | **Demoted to one earned use** — the actual stain-color swatch in the before/after panel only, not a site-wide accent |
 
 ## 3. Type pairing
 
@@ -42,6 +44,8 @@ Template Zero's Story Pole (a static wayfinding rail) is replaced with the **Spr
 ## 6. Images
 
 No usable real photography exists yet for this business (no site, Facebook photos not accessible). All images are real stock (Unsplash), not AI-generated, chosen to match the fence-staining before/after narrative specifically.
+
+**Bug fixed 2026-07-30:** the hero image was visibly stretching on some viewports. Root cause: `.hero__media` used `align-self: stretch` inside a CSS grid row combined with `img { height: 100% }` — the box's height resolved ambiguously against the grid's auto row track instead of a stable value. Replaced with a fixed `aspect-ratio: 4/3` on the container, which gives `object-fit: cover` a stable box to crop against regardless of viewport — no more distortion. Also nudged `object-position` down to frame more fence, less sky.
 
 ## 7. Flag for Owen
 
