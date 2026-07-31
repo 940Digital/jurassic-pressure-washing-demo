@@ -342,7 +342,7 @@ h2.section-title { font-size: var(--fs-h2); }
 .brand-mark span { color: #3194E0; }
 
 /* ---------- Buy-this-site page ---------- */
-.pitch-hero { padding: 9rem 0 4rem; text-align: center; }
+.pitch-hero { padding-top: 9rem; padding-bottom: 4rem; text-align: center; }
 .pitch-hero .eyebrow { display: block; }
 .pitch-hero h1 { max-width: none; }
 .pitch-hero p { max-width: 56ch; margin: 1.3rem auto 0; font-size: 1.1rem; }
