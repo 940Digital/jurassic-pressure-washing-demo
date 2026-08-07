@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Commercial Exteriors — Jurassic Pressure Washing LLC | Denton, TX</title>
-<meta name="description" content="Commercial exterior pressure washing in Denton, TX — storefronts, walkways, and light industrial surfaces.">
+<title>Contact — Jurassic Pressure Washing LLC | Denton, TX</title>
+<meta name="description" content="Book a free walkthrough with Jurassic Pressure Washing in Denton, TX. Call or text (913) 909-7010.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -45,65 +45,52 @@
 
 <main>
 
-  <section class="section" style="padding-top:9.5rem;">
-    <div class="wrap">
-      <span class="eyebrow"><a href="services.html" style="color:inherit;">Services</a> / Commercial</span>
-      <h1 style="font-size:clamp(2.2rem, 5vw, 3.6rem); max-width:16ch;">Commercial Exteriors</h1>
-      <p class="section-dek" style="max-width:52ch;">Storefronts, walkways, and light industrial surfaces — kept clean for foot traffic and curb appeal, scheduled around your business hours.</p>
-      <div class="hero__actions" style="margin-top:1.6rem;">
-        <a href="contact.html" class="btn btn--primary">Book a Free Walkthrough</a>
-        <a href="tel:+19139097010" class="btn btn--ghost">Call or Text (913) 909-7010</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--dark">
+  <section class="section contact" style="padding-top:9.5rem;">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">What's Included</span>
-        <h2 class="section-title">Surface-safe, every time.</h2>
+        <span class="eyebrow">Book a Free Walkthrough</span>
+        <h1 class="section-title" style="font-size:clamp(2.2rem, 5vw, 3.6rem);">Tell Jeffrey what needs washing.</h1>
       </div>
-      <ul class="spec-list">
-        <li>Storefronts &amp; walkways</li>
-        <li>Light industrial surfaces</li>
-        <li>Scheduled around business hours</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="feature-media" style="border-radius:3px; overflow:hidden; box-shadow:0 30px 60px -20px rgba(20,37,48,0.4);">
-        <img src="https://images.unsplash.com/photo-1707897283710-4beef9a1b066?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="A person pressure washing an exterior surface with a hose" style="width:100%; display:block;">
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="process">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">How It Works</span>
-        <h2 class="section-title">Three steps, no surprises.</h2>
-      </div>
-      <div class="process-grid">
-        <div class="process-step"><b>01</b><h3 style="font-family:var(--font-body); text-transform:none; font-size:1.05rem;">Reach out</h3><p>Call, text, or send the form with what you're looking at.</p></div>
-        <div class="process-step"><b>02</b><h3 style="font-family:var(--font-body); text-transform:none; font-size:1.05rem;">Free walkthrough</h3><p>Jeffrey comes out, looks at the surfaces, and gives a flat price on the spot.</p></div>
-        <div class="process-step"><b>03</b><h3 style="font-family:var(--font-body); text-transform:none; font-size:1.05rem;">Wash day</h3><p>Surface-safe wash, done in a single visit for most jobs.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--dark" id="contact-cta">
-    <div class="wrap">
-      <span class="eyebrow">Book a Free Walkthrough</span>
-      <h2 class="section-title">Tell Jeffrey what needs washing.</h2>
-      <div class="contact-direct">
-        <div>
-          <span class="contact-direct__label">Call or Text</span>
-          <a href="tel:+19139097010">(913) 909-7010</a>
+      <div class="contact-layout">
+        <div class="contact-direct">
+          <div>
+            <span class="contact-direct__label">Call or Text</span>
+            <a href="tel:+19139097010">(913) 909-7010</a>
+          </div>
+          <div>
+            <span class="contact-direct__label">Service Area</span>
+            <a href="index.html#area" style="font-family:var(--font-body); font-weight:400; font-size:1rem;">4005 Gennaker Dr, Denton, TX 76210</a>
+          </div>
         </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="phone">Phone or email</label>
+              <input type="text" id="phone" name="phone" required autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="jobtype">What needs cleaning?</label>
+            <select id="jobtype" name="jobtype">
+              <option>Fence staining</option>
+              <option>House wash / siding</option>
+              <option>Driveway or sidewalk</option>
+              <option>Roof soft wash</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Anything else to add?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send It</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
-      <a href="contact.html" class="btn btn--primary" style="margin-top:1rem;">Book a Free Walkthrough</a>
     </div>
   </section>
 
